@@ -1,0 +1,13 @@
+<template name="userItem">
+	<!-- <li>name：{{name}} | age:{{age}}</li> -->
+	{{#if isEditing}}
+	<p>姓名：<input value="{{name}}" id="username"></p>
+	<p>年龄：<input value="{{age}}" id="age"></p>
+	<p><button>保存</button></p>
+	{{else}}
+	<li style="margin:10px">name:{{name}} | age:{{age}} 
+		<span class="edit" style="color:red">修改</span>
+		<span class="remove" style="color: red">删除</span>
+	</li>
+	{{/if}}
+</template>	
